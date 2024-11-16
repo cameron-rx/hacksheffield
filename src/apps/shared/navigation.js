@@ -4,12 +4,15 @@ import { StatisticsComponent } from "../dashboard/statistics";
 import { HomePage } from '../home/home-page'
 import Habits from '../habits/habitsPage';
 
+
 export function MyRouter() {
     return (
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/dashboard" element={<StatisticsComponent />} />
         <Route path="/habits" element={<Habits />} />
+
+        {/* <Route path="/" element={<StatisticsComponent />} /> */}
       </Routes>
     );
   }
