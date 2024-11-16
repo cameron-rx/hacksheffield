@@ -13,7 +13,7 @@ export const createUserTest = async function() {
 
 export const getUserTest = async function() {
     console.log("Testing getting user")
-    const dbResponse = await userGet("ID:1000")
+    const dbResponse = await userGet("ID:100")
     console.log("Get Response from server: \n" + dbResponse)
 }
 
