@@ -3,6 +3,7 @@
 import LoginButton from "./apps/accounts/login";
 import LogoutButton from "./apps/accounts/logout";
 import Profile from "./apps/accounts/profile";
+import NavAside from "./apps/shared/nav-aside";
 
 // function App() {
 //   return (
@@ -28,6 +29,7 @@ import Profile from "./apps/accounts/profile";
 
 // export default App;
 
+
 function MyButton() {
   return (
     <button>
@@ -39,11 +41,15 @@ function MyButton() {
 export default function App() {
   return (
     <div>
-      <h1>Welcome to my app</h1>
-      <MyButton/>
-      <LoginButton/>
-      <Profile/>
-      <LogoutButton/>
+      <NavAside />
+      <div style={{ marginLeft: '200px', padding: '20px' }}>
+       <h1>Welcome to my app</h1>
+       <MyButton/>
+       <LoginButton/>
+       <Profile/>
+       <LogoutButton/>
+      </div>
+
     </div>
   )
 }
