@@ -1,0 +1,23 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    height: 100vh; 
+    padding: 0; 
+  }
+  .row {
+    margin: 0; 
+  }
+  .row:first-child {
+    height: 40%; 
+  }
+  .row:last-child {
+    height: 60%; 
+  }
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }

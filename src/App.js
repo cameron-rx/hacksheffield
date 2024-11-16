@@ -1,7 +1,4 @@
 // import logo from './logo.svg';
-// import './App.css';
-
-
 import NavAside from "./apps/shared/nav-aside";
 
 import { BrowserRouter } from 'react-router-dom';
@@ -13,11 +10,14 @@ export default function App() {
   return (
     <div className="mainPage">
       <BrowserRouter>
-        <div className="sidebar">
-          <NavAside />
-        </div>
-        <div className="content">
-          <CurrentPageRouter />
+        <div className="d-flex">
+          <div className="sidebar p-3" style={{ width: '250px' }}>
+            <NavAside />
+          </div>
+          
+          <div className="content flex-grow-1 p-3">
+            <CurrentPageRouter />
+          </div>
         </div>
       </BrowserRouter>
     </div>
