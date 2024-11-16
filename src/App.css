@@ -2,3 +2,11 @@
   display: flex;
   height: 100vh;
 }
+
+.sidebar {
+  width: 16%;
+}
+
+.content {
+  width: 80%;
+}
