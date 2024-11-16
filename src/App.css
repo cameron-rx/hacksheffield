@@ -1,12 +1,15 @@
 .mainPage {
-  display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar {
-  width: 16%;
+  background-color: lightcoral;
+
+  height: 100vh;
+  overflow-y: auto;
 }
 
 .content {
-  width: 80%;
+  height: 95vh;
+  overflow-y: auto;
 }
