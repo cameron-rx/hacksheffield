@@ -15,13 +15,7 @@ function MyButton() {
 export function HomePage() {
     return (
       <div>
-         <NavAside/>
          <div style={{ marginLeft: '200px', padding: '20px' }}>
-          <h1>Welcome to the Habit Tracker </h1>
-          <MyButton/>
-          <LoginButton/>
-          <Profile/>
-          <LogoutButton/>
          </div>
       </div>
     )

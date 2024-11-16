@@ -1,12 +1,13 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 const NavAside = () => {
   return (
     <div className="sidebar">
       <ul>
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#habits">Habits</a></li>
-        <li><a href="#add-habit">+ Add a New Habit</a></li>
+        <li> <Link to="/dashboard">Dashboard</Link>  </li>
+        <li> <Link to="/habits">Habits</Link> </li>
+        <li> <Link to="/add-habit"> + Add a new Habit</Link> </li>
       </ul>
 
 

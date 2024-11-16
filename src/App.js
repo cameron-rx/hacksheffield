@@ -4,6 +4,7 @@ import LoginButton from "./apps/accounts/login";
 import LogoutButton from "./apps/accounts/logout";
 import Profile from "./apps/accounts/profile";
 import NavAside from "./apps/shared/nav-aside";
+import Habits from "./apps/habits/habitsPage";
 
 import { BrowserRouter } from 'react-router-dom';
 import { MyRouter, Navigation } from './apps/shared/navigation';
@@ -48,10 +49,10 @@ export default function App() {
     <div>
       <BrowserRouter>
         <NavAside />
-        <i class="bi bi-basket2-fill"></i>
-        <MyRouter/>
-        <Navigation/>
+        <MyRouter />
       </BrowserRouter>
     </div>
-  )
+
+
+  );
 }
