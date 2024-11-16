@@ -8,7 +8,8 @@ export const createHabitTest = async function() {
         title: "Gym",
         description: "Workout to improve physical health",
         frequency: "weekly",
-        dates: [Date.now(), Date.now()]
+        dates: [Date.now(), Date.now()],
+        include: true
     });
     console.log("Creating Habit Response: \n"+ dbRepsonse)
 }

@@ -76,7 +76,7 @@ returns status based on whether delted or not
 */
 router.delete('/users/:userID/habits/:habitID', async function(req,res,next){ 
     const userID = req.params.userID
-    const habitID = req.params.userID
+    const habitID = req.params.habitID
 
     const deleteRequest = await habitDelete(userID, habitID)
 
@@ -88,6 +88,32 @@ router.delete('/users/:userID/habits/:habitID', async function(req,res,next){
 
 })
 
+/*
+ROUTE UPDATE HABIT IN DB
+
+example fetch url http://localhost:5050/users/{userid}/habits/{habitID}
+where 
+{userid} is id obtained from user post request
+{habitID} is id obtained from posting habit 
+
+send in body json object any fields you want to update in the habit object
+
+returns status based on whether updated or not
+*/
+router.put('/users/:userID/habits/:habitID', async function(req,res,next){
+    const userID = req.params.userID;
+    const habitID = req.params.habitID;
+
+    const data = req.body
+
+    const dbResponse = await habitUpdate(userID,habitID,data)
+
+    if (dbResponse) {
+        res.status(200).send("Habit updated.")
+    } else {
+        res.status(505).send("Error in updating habit.")
+    }
+})
 
 /*
 ROUTE ADD DATE TO HABIT IN DB

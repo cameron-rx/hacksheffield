@@ -7,6 +7,7 @@ const HabitSchema = new mongoose.Schema({
     description: { type: String },                                                
     frequency: { type: String, enum: ['daily', 'weekly', 'monthly'], required: true }, 
     dates: [{ type: Date }],
+    includes: {type: Boolean, required: true, default: true}
   });
 
 HabitSchema.set('toObject', {getters: true, virtuals: true});
