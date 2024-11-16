@@ -1,0 +1,16 @@
+.habits-page {
+    margin-left: 200px; /* Adjust based on nav bar width */
+    padding: 20px;
+}
+
+header h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    color: #2c3e50;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
