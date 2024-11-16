@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 // import './App.css';
-import LoginButton from "./apps/accounts/login";
-import LogoutButton from "./apps/accounts/logout";
-import Profile from "./apps/accounts/profile";
+
+import { BrowserRouter } from 'react-router-dom';
+import { MyRouter, Navigation } from './apps/shared/navigation';
 
 // function App() {
 //   return (
@@ -28,22 +28,13 @@ import Profile from "./apps/accounts/profile";
 
 // export default App;
 
-function MyButton() {
-  return (
-    <button>
-        I'm a button
-    </button>
-  );
-}
-
 export default function App() {
   return (
     <div>
-      <h1>Welcome to my app</h1>
-      <MyButton/>
-      <LoginButton/>
-      <Profile/>
-      <LogoutButton/>
+      <BrowserRouter>
+        <MyRouter/>
+        <Navigation/>
+      </BrowserRouter>
     </div>
   )
 }
