@@ -1,6 +1,13 @@
 # Backend Instructions
 ## Install
+Will start a web server at http://localhost:5050/ (use this as beginning for endpoints) 
+```
+cd backend
+npm install
+npm start
+```
 ## Using Atlas
+
 ## Endpoints
 
 ### POST /users
@@ -75,15 +82,30 @@ Code 404: habit not found
 code 505: error
 ```
 
-### Point
+### POST /users/:userID/habits/:habitID/dates
+Adds a date to the dates array in a habit in the db.
 #### Request
 ```
+method: "POST"
+body: {date: Date Object}
 ```
 #### Response
 ```
+Code 200: success
+Code 404: habit not found
+Code 505: error
 ```
 
 
-### Point
+### DELETE /users/:userID/habits/:habitID/dates
+Deletes a given date from the dates field in a habit in the db.
 #### Request
+```
+method: "DELETE"
+body: {date: Date Object}
+```
 #### Response
+```
+code 200: success
+code 404: habit not found
+code 505: error
