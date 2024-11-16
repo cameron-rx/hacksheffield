@@ -7,7 +7,8 @@
 Used to add users to database/check for user in database and returns db uuid. Requires AuthOID from authentication.
 #### Request
 ```
-{ID: Auth0ID}
+method: "POST"
+body: {ID: Auth0ID}
 ```
 #### Response
 ```
@@ -18,11 +19,16 @@ Used to add users to database/check for user in database and returns db uuid. Re
 ```
 
 ### GET /users/:userID/habits
+Gets all the habits for a specific user.
 #### Request
 ```
+method: "GET"
 ```
 #### Response
 ```
+{
+  [habit objects]
+}
 ```
 
 ### Point
