@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-let Schema = mongoose.Schema;
 
 const HabitSchema = new mongoose.Schema({
     userID: { type: String, required: true}, // Unique Auth0 user ID
@@ -31,7 +30,7 @@ export const habitUpdate = async function(userID, habitID, updatedHabit) {
 
 export const habitGetOne = async function(userID, habitID) {
     const habit = await habitModel.findOne({userID: userID, _id: habitID})
-    return user;
+    return habit;
 }
 
 export const habitGetAll = async function(userID) {
