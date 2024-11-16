@@ -47,23 +47,33 @@ body: {
 {id: habitID)
 ```
 
-### 
+### DELETE /users/:userID/habits/:habitID
 #### Request
 ```
+method: "DELETE"
 ```
 #### Response
 ```
+Code 200: Success
+Code 505: Error
 ```
 
 
-### Point
+### PUT /users/:userID/habits/:habitID
+Updates the given habit with new fields.
 #### Request
 ```
+method: "PUT"
+body: {
+  description: "New Description" -- Add any fields that want to be changed.
+}
 ```
 #### Response
 ```
+Code 200: success
+Code 404: habit not found
+code 505: error
 ```
-
 
 ### Point
 #### Request
