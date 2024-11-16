@@ -32,6 +32,7 @@ export default function App() {
   return (
     <div>
       <BrowserRouter>
+        <i class="bi bi-basket2-fill"></i>
         <MyRouter/>
         <Navigation/>
       </BrowserRouter>
