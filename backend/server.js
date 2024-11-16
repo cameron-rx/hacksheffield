@@ -23,9 +23,9 @@ await updateUserTest();
 await deleteUserTest();
 */
 
-await createHabitTest();
 /* Testing habit db interaction
 await getAllHabitTest();
+await createHabitTest();
 */
 
 // start the Express server
