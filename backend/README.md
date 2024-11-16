@@ -31,15 +31,23 @@ method: "GET"
 }
 ```
 
-### Point
+### POST /users/:userID/habits
+Adds habit to database.
 #### Request
 ```
+method: "POST"
+body: {
+        title: "Gym",
+        description: "Workout to improve physical health",
+        frequency: "weekly",
+        include: true
 ```
 #### Response
 ```
+{id: habitID)
 ```
 
-### Point
+### 
 #### Request
 ```
 ```
