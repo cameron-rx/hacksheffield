@@ -1,7 +1,76 @@
 .top-navigation {
-    background-color: aqua;
+    background-color: #2c3e50;
+    font-family: "Righteous", sans-serif;
+    color: lightcoral;
+}
+
+
+
+.title-nav {
+
 }
 
 .bi.bi-award-fill {
     font-size: 32px;
 }
+
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-container img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover; 
+    border-radius: 50%;
+}
+
+
+
+.profile-container button {
+    background-color: lightcoral;  /* Subtle, elegant blue */
+    color: white;               /* White text for contrast */
+    padding: 8px 16px;          /* Moderate padding for balance */
+    border-radius: 25px;        /* Rounded corners */
+    border: 2px solid transparent; /* No visible border */
+    font-size: 1rem;            /* Simple text size */
+    font-weight: 500;           /* Slightly bolder text */
+    text-transform: uppercase;  /* Uppercase text for elegance */
+    display: inline-flex;       /* Align text and icon nicely */
+    align-items: center;        /* Vertically center content */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    cursor: pointer;           /* Change cursor to pointer for interaction */
+  }
+  
+  /* Hover effect */
+  .profile-container button:hover {
+    background-color: lightcoral;  /* Slightly darker shade of blue */
+    border-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+  }
+  
+  /* Active (pressed) state */
+  .profile-container button:active {
+    background-color: lightcoral;  /* Darker shade for active state */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow on click */
+  }
+  
+  /* Focus state for accessibility (when the button is focused) */
+  .profile-container button:focus {
+    outline: none;              /* Remove default outline */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Light blue glow when focused */
+  }
+  
+  /* Icon styling inside the button */
+  .profile-container button i {
+    margin-right: 8px;          /* Space between icon and text */
+    font-size: 1.2rem;          /* Slightly smaller icon size */
+    transition: transform 0.2s ease; /* Smooth icon animation on hover */
+  }
+  
+  /* Icon hover effect */
+  .profile-container button:hover i {
+    transform: translateX(4px); /* Small shift to the right on hover */
+  }
