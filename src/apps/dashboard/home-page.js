@@ -4,7 +4,7 @@
 // import NavAside from "../shared/nav-aside";
 import './home-page.css';
 import { StatisticsComponent } from './statistics/statistics-component';
-import ListHabits from './list-habits';
+import { ListHabits } from './list-habits';
 
 
 export function HomePage() {

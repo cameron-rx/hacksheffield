@@ -7,7 +7,7 @@ const NavAside = () => {
       <ul>
         <li> <Link to="/">Dashboard</Link>  </li>
         <li> <Link to="/habits">Habits</Link> </li>
-        <li> <Link to="/add-habit"> + Add a new Habit</Link> </li>
+        {/* <li> <Link to="/add-habit">New Habit</Link> </li> */}
       </ul>
     </div>
   );
