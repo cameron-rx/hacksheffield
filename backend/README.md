@@ -6,8 +6,6 @@ cd backend
 npm install
 npm start
 ```
-## Using Atlas
-
 ## Endpoints
 
 ### POST /users
