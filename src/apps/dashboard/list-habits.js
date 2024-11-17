@@ -33,13 +33,13 @@ const ListHabits = () => {
   return (
     <div className="d-flex flex-column vh-100">
       {/* Header */}
-      <header className="p-3 bg-light text-center">
+      <header className="p-3 bg-light text-center rounded-top" style={{ color: 'black' }}>
         <h2>Dashboard</h2>
       </header>
 
       {/* Add Habit Button */}
       <button
-        className="btn btn-success w-100 p-2 d-flex justify-content-center align-items-center"
+        className="btn btn-success rounded-0 w-100 p-2 d-flex justify-content-center align-items-center"
         onClick={() => console.log("Add new habit")}
       >
         <i className="bi bi-plus-circle me-2"></i> Add Habit

@@ -9,10 +9,10 @@ import ListHabits from './list-habits';
 
 export function HomePage() {
   return (
-    <div className="container mt-4 p-3">
+    <div className="container mt-4">
       <StatisticsComponent />
-      <div className="row mt-3">
-        <div className="col-12 text-white text-center">
+      <div className="row mt-5">
+        <div className="col-12 text-white text-center p-4">
           <ListHabits />
         </div>    
       </div>
