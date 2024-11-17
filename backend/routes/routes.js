@@ -50,7 +50,7 @@ router.post('/users/:userID/habits', async function(req, res, next) {
     })
 
     if (habit) {
-        req.status(200).json(habit.id)
+        req.status(200).json({id: habit.id})
     } else {
         req.status(505).send("Failed to create habit")
     }
@@ -65,12 +65,6 @@ where
 {userid} is id obtained from user post request
 {habitID} is id obtained from posting habit 
 
-send in body json object
-{
-    title: title
-    description: description
-    frequency: frequency (options="weekly","daily","monthly")
-}
 
 returns status based on whether delted or not
 */
