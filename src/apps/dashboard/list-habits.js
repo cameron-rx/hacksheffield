@@ -39,10 +39,10 @@ const ListHabits = () => {
 
       {/* Add Habit Button */}
       <button
-        className="btn btn-success w-100 p-3"
+        className="btn btn-success w-100 p-2 d-flex justify-content-center align-items-center"
         onClick={() => console.log("Add new habit")}
       >
-        <i className="bi bi-plus-circle"></i> Add Habit
+        <i className="bi bi-plus-circle me-2"></i> Add Habit
       </button>
 
       {/* Scrollable Table */}
@@ -56,7 +56,7 @@ const ListHabits = () => {
               <tr>
                 <th
                   style={{
-                    padding: "16px",
+                    padding: "32px",
                     verticalAlign: "middle",
                   }}
                 >
@@ -64,7 +64,7 @@ const ListHabits = () => {
                 </th>
                 <th
                   style={{
-                    padding: "16px",
+                    padding: "32px",
                     verticalAlign: "middle",
                   }}
                 >
@@ -72,7 +72,7 @@ const ListHabits = () => {
                 </th>
                 <th
                   style={{
-                    padding: "16px",
+                    padding: "32px",
                     verticalAlign: "middle",
                   }}
                 >
@@ -80,7 +80,7 @@ const ListHabits = () => {
                 </th>
                 <th
                   style={{
-                    padding: "16px",
+                    padding: "32px",
                     verticalAlign: "middle",
                   }}
                 >

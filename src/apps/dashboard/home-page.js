@@ -12,7 +12,7 @@ export function HomePage() {
     <div className="container mt-4 p-3">
       <StatisticsComponent />
       <div className="row mt-3">
-        <div className="col-12 bg-danger text-white text-center py-4">
+        <div className="col-12 text-white text-center">
           <ListHabits />
         </div>    
       </div>
