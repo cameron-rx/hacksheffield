@@ -1,18 +1,27 @@
 import React, { useState } from "react";
 import "./list-habits.css";
+import { useAuth0 } from "@auth0/auth0-react";
+import { getAllHabits } from "../../services/habits";
 
-const exampleHabits = [
-  { id: 1, title: "Exercise", include: false },
-  { id: 2, title: "Meditate", include: false },
-  { id: 3, title: "Read", include: false },
-  { id: 4, title: "Code", include: false },
-  { id: 5, title: "Walk", include: false },
-  { id: 6, title: "Hydrate", include: false },
-  { id: 7, title: "Plan", include: false },
-];
+// const exampleHabits = [
+//   { id: 1, title: "Exercise", include: false },
+//   { id: 2, title: "Meditate", include: false },
+//   { id: 3, title: "Read", include: false },
+//   { id: 4, title: "Code", include: false },
+//   { id: 5, title: "Walk", include: false },
+//   { id: 6, title: "Hydrate", include: false },
+//   { id: 7, title: "Plan", include: false },
+// ];
+let exampleHabits = [];
 
 const ListHabits = () => {
   const [habits, setHabits] = useState(exampleHabits);
+  const { user, isAuthenticated, isLoading } = useAuth0();
+
+  if (isAuthenticated) {
+    exampleHabits = getAllHabits(user.sub);
+    console.log(exampleHabits);
+  }
 
   const handleCheckboxChange = (id) => {
     setHabits(
