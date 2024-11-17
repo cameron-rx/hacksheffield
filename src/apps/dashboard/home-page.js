@@ -4,6 +4,7 @@
 // import NavAside from "../shared/nav-aside";
 import './home-page.css';
 import { StatisticsComponent } from './statistics/statistics-component';
+import ListHabits from './list-habits';
 
 
 export function HomePage() {
@@ -12,8 +13,9 @@ export function HomePage() {
         <StatisticsComponent />
 
       <div className="row mt-3">
-        <div className="col-12 bg-danger text-white text-center py-4">Full Width Row</div>
-      </div>
-  </div>
+        <div className="col-12 bg-danger text-white text-center py-4">
+          <ListHabits />
+        </div>      
+    </div>
   )
 }
