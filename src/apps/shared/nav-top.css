@@ -5,11 +5,6 @@
 }
 
 
-
-.title-nav {
-
-}
-
 .bi.bi-award-fill {
     font-size: 32px;
 }
@@ -26,8 +21,6 @@
     object-fit: cover; 
     border-radius: 50%;
 }
-
-
 
 .profile-container button {
     background-color: lightcoral;  /* Subtle, elegant blue */

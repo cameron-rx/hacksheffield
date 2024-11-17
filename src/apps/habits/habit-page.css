@@ -1,16 +1,46 @@
-.habits-page {
-    margin-left: 200px; /* Adjust based on nav bar width */
-    padding: 20px;
-}
+/* Styles for the body and the main container to ensure full height */
 
-header h2 {
-    margin: 0 0 20px;
-    font-size: 24px;
-    color: #2c3e50;
-    
-}
 
-section {
+/* Container for your page */
+.main-container {
     display: flex;
     flex-direction: column;
+    height: 100vh;
+}
+
+/* Styles for the cards container */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 12px;
+    padding: 16px;
+    padding-top: 0;
+    width: 100%;
+    flex-grow: 1;
+    padding-bottom: 12px; 
+}
+
+.text-date {
+    font-family: "Righteous", sans-serif;
+    font-size: 24px;
+}
+
+.cards .card {
+    height: 340px;
+    flex: 1 1 calc(33.33% - 12px); /* Default 3 cards per row (33.33%) */
+}
+
+/* Media query for medium screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .cards .card {
+        flex: 1 1 calc(50% - 12px); /* 2 cards per row on medium-sized screens */
+    }
+}
+
+/* Media query for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .cards .card {
+        flex: 1 1 100%; /* 1 card per row on very small screens */
+    }
 }
